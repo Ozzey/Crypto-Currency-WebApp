@@ -1,0 +1,42 @@
+<html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/base.css') }}">
+<link rel="icon" href="{{ url_for('static', filename='images/favico.png') }}" type="image/x-icon">
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    {% block content %} {% endblock %}
+</head>
+<body>
+<header>
+    <a class='cta' href="{{url_for('main')}}" ><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <center>
+        <img class="logo" src="/static/images/logo2.png">
+            Home
+        </center>
+    </a>
+
+    <nav>
+        <ul class="nav_links" style="white-space:nowrap;">
+            <li><a href="{{url_for('crypto',name= 'Bitcoin', rank='1')}}">Crypto Charts</a></li>
+            <li><a href="{{url_for('news')}}">News</a></li>
+            <li><a href="{{url_for('services')}}">Services</a></li>
+            <li><a href="{{url_for('crypto',name= 'Bitcoin', rank='1')}}">Portfolio</a></li>
+            <li><a href="{{url_for('crypto',name= 'Bitcoin', rank='1')}}">Learn</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="{{url_for('contacts')}}">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Contact
+    </a>
+</header>
+<hr/>
+{% block body %} {% endblock %}
+</body>
+</html>
