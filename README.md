@@ -70,6 +70,6 @@ ___________________________________________________
 *User Interface:*
 ![image](https://user-images.githubusercontent.com/49760167/206183198-d76d14c3-74d4-432d-8a99-ac391624af74.png)
 
-> Live version of the web-application can be checked [Here](https://disk.yandex.com/d/bTUqe8hN7zfn8g)
+> Live version of the web-application can be checked [Here](https://dashboard-13r0.onrender.com/)
 
 > For any questions or doubts contact me on [Telegram](https://t.me/o22ey)
