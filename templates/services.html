@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/services.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+{% endblock %}
+{% block body %}
+<div class="wrapper">
+    <div class="box" >
+        <div class="front-face">
+            <div class="icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <span>Telegram Bot</span>
+        </div>
+        <div class="back-face">
+            <span>Telegram Bot</span>
+            <a href="https://t.me/ozcrypto_bot"><p>
+                This is a telegram bot which can be used to get notification about specific crypto. Notification include news, alerts on reaching certain price etc.
+            </p></a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="front-face">
+            <div class="icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <span>Algorithmic Trading</span>
+        </div>
+        <div class="back-face">
+            <span>Algorithmic Trading</span>
+            <a href="{{url_for('contacts')}}"><p>
+               Algorithmic trading is a method of executing orders using automated trading instructions.
+                Using our Web-Application you can place order for your custom Algorithmic Trading scripts.
+            </p></a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="front-face">
+            <div class="icon">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <span>Dashboard</span>
+        </div>
+        <div class="back-face">
+            <span>Dashboard</span>
+            <a href="{{url_for('crypto',name= 'Bitcoin', rank='1')}}"><p>
+            <p>
+                A Dashboard is used to track your crypto assets so that you can manage them accordingly.
+                You can use our Web-App Dashboard for visualization of your crypto assets and maximize your profits.
+            </p></a>
+        </div>
+    </div>
+</div>
+{% endblock %}
